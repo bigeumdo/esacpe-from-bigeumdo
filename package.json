@@ -1,8 +1,9 @@
 {
-  "name": "escape-from-biguemdo",
+  "name": "escape-from-bigeumdo",
   "version": "v1.1",
   "private": true,
   "homepage": ".",
+  "publisher": "bigeumdo",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

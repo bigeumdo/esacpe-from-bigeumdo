@@ -18,7 +18,7 @@ const Header = () => {
                 <div className={styles.logo}>
                     <img 
                         src={process.env.PUBLIC_URL + '/logo.png'}
-                        alt="Esacpe From Biguemdo"
+                        alt="Esacpe From Bigeumdo"
                         placeholder='blur'
                         height={80}
                     />
