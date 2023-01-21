@@ -1,6 +1,6 @@
 # Escape From Bigeumdo
 
-[비금도에서 탈출하기](https://escapefrombiegumdo.netlify.app)
+[비금도에서 탈출하기](https://escapefrombigeumdo.netlify.app)
 
 ## Version 1.1
 
