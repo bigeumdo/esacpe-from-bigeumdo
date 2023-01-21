@@ -1,0 +1,11 @@
+{
+    "CUSTOMS": {"name": "customs", "hidden": 23, "uname":"Customs"},
+    "WOODS": {"name": "woods", "hidden": 31, "uname":"Woods"},
+    "FACTORY": {"name": "factory", "hidden": 0, "uname":"Factory"},
+    "INTERCHANGE": {"name": "interchange", "hidden": 18, "uname":"Interchange"},
+    "RESERVE": {"name": "reserve", "hidden": 0, "uname":"Reserve"},
+    "SHORELINE": {"name": "shoreline", "hidden": 40, "uname":"Shoreline"},
+    "THELAB": {"name": "thelab", "hidden": 0, "uname":"Thelab"},
+    "LIGHTHOUSE": {"name": "lighthouse", "hidden": 0, "uname":"Lighthouse"},
+    "STREETS": {"name": "streets", "hidden": 0, "uname":"Streets"}
+}

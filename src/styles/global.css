@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #000;
+    color: #9a8866;
+    overflow: hidden;
+    font-family: 'Myfont';
+    letter-spacing:1px
+  }
+
+body > #root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .tile-layer-class  { 
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+  
+  a {
+    color: #9a8866;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+  
+  @font-face {
+    font-family: 'Myfont';
+    font-style: normal;
+    font-weight: normal;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Myfont';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../public/bender.regular.otf') format('opentype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  
+  @font-face {
+    font-family: 'BenderBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../public/bender.bold.otf') format('opentype');
+  }
