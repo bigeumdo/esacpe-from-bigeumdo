@@ -7,7 +7,8 @@ const MapsRoutes = () => {
     return  (
         <Routes>
             <Route exact path='/'>
-                <Route index path={mapsData.CUSTOMS.name} element={<RenderMap uname={mapsData.CUSTOMS.uname} />} />
+                <Route path='' element={<div>메인페이지 공사중</div>} />
+                <Route path={mapsData.CUSTOMS.name} element={<RenderMap uname={mapsData.CUSTOMS.uname} />} />
                 <Route path={mapsData.SHORELINE.name} element={<RenderMap uname={mapsData.SHORELINE.uname} />} />
                 <Route path={mapsData.WOODS.name} element={<RenderMap uname={mapsData.WOODS.uname} />} />
                 <Route path={mapsData.FACTORY.name} element={<RenderMap uname={mapsData.FACTORY.uname} />} />
