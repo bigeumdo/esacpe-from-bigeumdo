@@ -5,6 +5,8 @@ import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import 'leaflet.fullscreen/Control.FullScreen';
 import 'leaflet.fullscreen/Control.FullScreen.css';
+import { BiTimeFive } from 'react-icons/bi';
+import { MdPeopleAlt } from 'react-icons/md';
 
 let DefaultIcon = L.icon({
     iconUrl: icon,
@@ -24,6 +26,7 @@ const Markers = ({data}) => {
         </Marker>
     ));
 }
+
 
 const GetCoordinates = () => {
     const map = useMap();
@@ -66,9 +69,9 @@ const GetCoordinates = () => {
 
 const RenderMap = ({uname}) => {
     const data = require(`./${uname}.map.json`);
-    
+
     return (
-        <MapContainer 
+        <MapContainer
             fullscreenControl={true} 
             center={data.center}
             bounds={[100, 100]}
@@ -77,23 +80,46 @@ const RenderMap = ({uname}) => {
             minZoom={data.minZoom} 
             maxZoom={data.maxZoom} >
             
-            <TileLayer
-                url={`https://storage.googleapis.com/storage_efb/tiles/${data.name}/{z}/{x}/{y}.png`}
-                noWrap={true}
-            />
-            
             {/* <GetCoordinates /> */}
             <FlyCenter center={data.center} />
-            <LayersControl position="topright">
-              <LayersControl.Overlay checked name="마커 표시">
-                <LayerGroup>
+            <LayersControl position="topleft">
+              <LayersControl.BaseLayer checked name="기본">
+                <TileLayer
+                    url={`https://storage.googleapis.com/storage_efb/tiles/${data.types.normal}/{z}/{x}/{y}.png`}
+                    noWrap={true}
+                />
+              </LayersControl.BaseLayer>
+              { data.markers.length > 0 &&
+                <LayersControl.Overlay checked name="마커 표시">
+                  <LayerGroup>
                   <Markers data={data} />
                 </LayerGroup>
-                
               </LayersControl.Overlay>
+            }
             </LayersControl>
             
-            
+            <div 
+              style={{
+                position:'fixed', 
+                bottom:0,
+                fontFamily: 'MyFont',
+                display: 'flex',
+                fontSize: '1.2rem',
+                textAlign:'center',
+                zIndex: 1000,
+                backgroundColor: '#0e0e0e',
+                height: '30px'
+                }}>
+                <div style={{margin:'0px 7px', display: 'flex', alignItems:'center'}} >
+                  <BiTimeFive style={{marginRight: '3px'}} size='30px' />
+                    {data.duration}
+                </div>
+                <div style={{margin:'0px 7px', display: 'flex', alignItems:'center'}} >
+                  <MdPeopleAlt style={{marginRight: '3px'}} size='30px' />
+                  {data.players}
+                </div>
+                
+            </div>
         </MapContainer>
     );
 }
