@@ -2,7 +2,7 @@
 
 [비금도에서 탈출하기](https://escape-from-bigeumdo.netlify.app/)
 
-## Version 1.1
+## Version 2.0
 
 2023-01-28 버전 2.0 업데이트
 
