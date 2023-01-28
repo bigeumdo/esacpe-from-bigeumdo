@@ -13,9 +13,9 @@ const Header = () => {
     }, delay)
 
     return (
-        <div className={styles.header}>
-            <Link to='/'>
-                <div className={styles.logo}>
+        <div className={styles.header_container}>
+            <Link to='/' >
+                <div className={styles.header_logo}>
                     <img 
                         src={process.env.PUBLIC_URL + '/logo.png'}
                         alt="Esacpe From Bigeumdo"
@@ -23,21 +23,17 @@ const Header = () => {
                         height={80}
                     />
                 </div>
+
             </Link>
-            <div className={styles.time_wrapper}>
-                <div style={{position:"absolute", bottom:0}}>
-                    <div>Raid Time</div>
-                    {time && 
-                        <div className={styles.time}>
-                            <TarkovTime side="left" time={time} />
-                            <TarkovTime side="right" time={time} />
-                        </div>
-                    }
-                </div>
-
+            <div className={styles.header_time_container}>
+                <div>Raid Time</div>
+                {time && 
+                    <div className={styles.time}>
+                        <TarkovTime side="left" time={time} />
+                        <TarkovTime side="right" time={time} />
+                    </div>
+                }
             </div>
-
-            
         </div>
     );
 };
