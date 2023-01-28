@@ -5,6 +5,11 @@
     "center": [64.930432, -15.304688],
     "minZoom": 2,
     "maxZoom": 5,
+    "types" : {
+        "normal" : "factory"
+    },
+    "duration" : "20분(낮), 25분(저녁)",
+    "players": "4-6명",
     "markers": [
         
     ]

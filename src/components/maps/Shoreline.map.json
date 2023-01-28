@@ -5,6 +5,12 @@
   "center": [63.860036, -15.46875],
   "minZoom": 2,
   "maxZoom": 5,
+  "types" : {
+    "normal" : "shoreline",
+    "hidden" : "shoreline_h"
+},
+"duration" : "45분",
+"players": "10-13명",
 "markers": [
   {
     "lat": 62.329208,

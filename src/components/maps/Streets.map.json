@@ -5,6 +5,11 @@
     "center": [59.888937, -39.375],
     "minZoom": 2,
     "maxZoom": 5,
+    "types" : {
+        "normal" : "streets"
+    },
+    "duration" : "50분",
+    "players": "15-17명",
     "markers": [
         
     ]

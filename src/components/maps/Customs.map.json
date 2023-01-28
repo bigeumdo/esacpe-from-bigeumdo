@@ -5,6 +5,12 @@
     "center": [64.320872, -13.007812],
     "minZoom": 2,
     "maxZoom": 5,
+    "types" : {
+        "normal" : "customs",
+        "hidden" : "customs_h"
+    },
+    "duration" : "40분",
+    "players": "9-12명",
     "markers": [
         {
             "lat": 49.037868,

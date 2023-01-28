@@ -5,6 +5,11 @@
     "center": [68.847665, -37.089844],
     "minZoom": 2,
     "maxZoom": 5,
+    "types" : {
+        "normal" : "thelab"
+    },
+    "duration" : "35분",
+    "players": "6-10명",
     "markers": [
         
     ]
